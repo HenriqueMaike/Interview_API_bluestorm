@@ -1,0 +1,91 @@
+.container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.containerChild {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.input {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    input {
+        width: 80%;
+    }
+}
+
+.dados {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cards {
+    width: 300px;
+    min-height: 400px;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cards:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.drugName {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+
+    p {
+        margin-bottom: 30px;
+    }
+
+    color: var(--blue-900);
+    font-weight: bold;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.progressContainer {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 100px;
+    }
+}

@@ -1,0 +1,54 @@
+.containerCenter {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.medicamentos {
+    margin-top: 2rem;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+
+    form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form button {
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .medicamentos {
+        width: 90%;
+    }
+}
+
+.delete {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #91f8ab;
+
+    button {
+        border: none;
+        font-size: 20px;
+        background-color: inherit;
+        color: #e43c3c;
+    }
+}
