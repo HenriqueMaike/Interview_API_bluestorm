@@ -13,6 +13,10 @@ Execute application
 ```bash
 yarn dev
 ```
+## Dados para login
+
+- username: bluestorm-api
+- password: apipassword123
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
