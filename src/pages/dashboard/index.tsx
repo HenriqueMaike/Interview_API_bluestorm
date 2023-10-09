@@ -1,3 +1,4 @@
+'apiCliente'
 import { useEffect, useState } from 'react'
 import { canSSRAuth } from '../../utils/canSSRAuth'
 import styles from './styles.module.scss';
@@ -46,7 +47,7 @@ export default function Dashboard() {
             },
           });
           setDados(response.data.data);
-          setPages(response.data.last_page)
+          setPages(response.data.total)
           setLoadind(false)
         } catch (error) {
           console.error("Erro ao buscar medicamentos:", error);
@@ -60,15 +61,18 @@ export default function Dashboard() {
             },
           });
           setDados(response.data.data);
-          setPages(response.data.last_page)
+          setPages(response.data.total)
           setLoadind(false)
         } catch (error) {
           toast.error("Erro ao buscar medicamentos:", error);
         }
       }
     }
+    
     handleMedication();
   }, [page, rowsPerPage, search]);
+
+  
 
   () => (event: React.MouseEvent<HTMLButtonElement> | null, search: string,) => {
     setSearch(search);
